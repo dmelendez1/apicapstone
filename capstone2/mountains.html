@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks Search</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/mountains.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@700&family=Odor+Mean+Chey&family=Philosopher&family=Prata&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        
+        <a class="navbar-brand" href="index.html">
+            
+            <img src="images2/wildscapelogo2.png" alt="Logo" style="width: 100px;"> 
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="parks.html">Parks</a></li>
+                <li class="nav-item"><a class="nav-link" href="mountains.html">Mountains</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#login">Contact</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    
+        <div class="background-container"></div>
+        
+        <div class="text-overlay">
+            <h1>Discover a New Peak</h1>
+        </div>
+
+        <main>
+            <section class="mt-location-widget">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 form-group">
+                                    <select id="mountainDropdown" class="form-control">
+                                        <option selected disabled>Mountains</option>
+                                        <!-- Mountain options will be added here -->
+                                    </select>
+                                </div>
+                                <div class="col-md-2 form-group d-flex align-items-center">
+                                    <button id="findMtButton" class="btn btn-dark">Find</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+
+
+
+        <div class="mt-guide container-fluid px-0">
+            <div class="inner-border">
+                <h2 class="text-center">Mountain Guide</h2>
+                <p class="text-center">
+                    Discover the most majestic mountains in each U.S. state through our carefully selected collection. 
+                    Featured below are the top 6 mountains for your exploration. Looking for something more specific? 
+                    Select from the dropdown menu above to find more breathtaking options.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <section class="content">
+                <ul class="mt-display-module-list">
+                    
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+        
+    <div class="footer-spacing"></div>
+
+    <div class="footer-mountains">&nbsp;</div>
+            <footer id="footer">
+                <div class="grid-container">
+                
+                    <div class="left-side">
+                        
+                        
+                        <div class="column logo-address">
+                            <img src="images2/wildscapelogo.png"  alt="Logo">
+                            <p>123 Address St, Phoenix, AZ</p>
+                            <p>Phone: 123-456-7890</p>
+                            <p>Fax: 123-456-7891</p>
+                        
+                            <div class="column social-icons">
+                                <a href="https://www.facebook.com/">
+                                    <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook">
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                    <img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram">
+                                </a>
+                            </div>
+        
+                        </div>
+        
+                        
+                        
+                        <div class="column footer-links">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Parks</a></li>
+                                <li><a href="mountains.html">Mountains</a></li>
+                                <li><a href="#">Donate</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+               
+                    
+                    
+                    <div class="right-side">
+                        <h2>Stay Inspired</h2>
+                        <form class="newsletter-form">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <button type="submit">Sign up for the newsletter</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2023 Wildscape LLC. All rights Reserved</p>
+                    <p>Designed by Diana Melendez</p>
+                </div>
+            </footer>
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            
+        
+        <!--<script src="scripts/top6mt.js"></script> -->
+        <script src="scripts/apisecond.js"></script>
+        
+        </body>
+        </html>
+        
